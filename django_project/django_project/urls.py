@@ -20,6 +20,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     #include() chops off url part that has mached up to that point
-    #only sends the remaining string to blog urls, in this case full blogs/url
+    #only sends the remaining string to blog urls, in this case full urls requests
     path('', include('blog.urls')), #blog.urls is just a regular inport meaning blogs/urls.py
 ]
